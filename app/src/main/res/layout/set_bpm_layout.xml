@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/layoutSetBPMExplanation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#888888"
+		android:orientation="vertical" >
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#000000"
+			android:text="@string/setBPM_explanation1"
+			android:textSize="12sp" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#000000"
+			android:text="@string/setBPM_explanation2"
+			android:textSize="12sp" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#000000"
+			android:text="@string/setBPM_explanation3"
+			android:textSize="12sp" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="2dp"
+			android:background="#000000"
+			android:text="@string/setBPM_explanation4"
+			android:textSize="12sp" />
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/scrollViewSetBPM"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/layoutSetBPMButtons"
+		android:layout_below="@+id/layoutSetBPMExplanation" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#888888"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:id="@+id/layoutSetBPMTableTop"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="#333333"
+				android:gravity="center"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/top_kyokumei"
+					android:textColor="#FFFFFF"
+					android:textSize="18sp" />
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layoutSetBPMTable"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:id="@+id/layoutSetBPMButtons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical" >
+
+		<Button
+			android:id="@+id/buttonABCSort"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="40dip"
+			android:text="@string/button_abc_sort"
+			android:textSize="15sp" />
+
+		<Button
+			android:id="@+id/buttonSetBPMSort"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="40dip"
+			android:text="@string/button_setBPM_sort"
+			android:textSize="15sp" />
+	</LinearLayout>
+
+</RelativeLayout>

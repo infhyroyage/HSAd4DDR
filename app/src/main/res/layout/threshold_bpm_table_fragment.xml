@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.hsadjustment.ddr.ThresholdBPMTableFragment" >
+
+	<LinearLayout
+		android:id="@+id/layoutThresholdBPMTableExplanation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#888888"
+		android:orientation="vertical" >
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#000000"
+			android:text="@string/common_explanation1"
+			android:textSize="12sp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#000000"
+			android:text="@string/threshold_explanation"
+			android:textSize="12sp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="2dp"
+			android:background="#000000"
+			android:text="@string/common_explanation2"
+			android:textSize="12sp" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/viewThresholdBPMCurrent"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layoutThresholdBPMTableExplanation" />
+
+	<ScrollView
+		android:id="@+id/scrollThresholdBPMTable"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/layoutThresholdBPMTableButtons"
+		android:layout_below="@+id/viewThresholdBPMCurrent" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#888888"
+			android:baselineAligned="false"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:layout_marginTop="2dp"
+					android:background="#333333"
+					android:orientation="vertical" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/top_hs"
+						android:textColor="#00FF00"
+						android:textSize="18sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/topLayoutThresholdBPM"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="2dp"
+					android:background="#333333"
+					android:gravity="center"
+					android:orientation="vertical" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/top_kyokumei"
+						android:textColor="#FFFFFF"
+						android:textSize="18sp" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layoutTableThresholdBPM"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:id="@+id/layoutThresholdBPMTableButtons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" >
+
+		<Button
+			android:id="@+id/buttonRunThresholdBPMTable"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:minHeight="40dip"
+			android:text="@string/button_run" />
+
+		<Button
+			android:id="@+id/buttonClearThresholdBPMTable"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.5"
+			android:minHeight="40dip"
+			android:text="@string/button_clear" />
+	</LinearLayout>
+
+</RelativeLayout>

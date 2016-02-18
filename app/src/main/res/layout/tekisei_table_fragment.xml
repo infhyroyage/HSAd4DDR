@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.hsadjustment.ddr.TekiseiTableFragment" >
+
+	<LinearLayout
+		android:id="@+id/layoutTekiseiTableExplanation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#888888"
+		android:orientation="vertical" >
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#000000"
+			android:text="@string/common_explanation1"
+			android:textSize="12sp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#000000"
+			android:text="@string/tekisei_explanation"
+			android:textSize="12sp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="2dp"
+			android:background="#000000"
+			android:text="@string/common_explanation2"
+			android:textSize="12sp" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/viewTekiseiTableCurrentBPM"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/layoutTekiseiTableExplanation" />
+
+	<TextView
+		android:id="@+id/viewTekiseiTableCurrentRange"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/viewTekiseiTableCurrentBPM" />
+
+	<ScrollView
+		android:id="@+id/scrollTekiseiTable"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/layoutTekiseiTableButtons"
+		android:layout_below="@+id/viewTekiseiTableCurrentRange" >
+
+		<LinearLayout
+			android:id="@+id/layoutTekiseiTable"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#888888"
+			android:baselineAligned="false" >
+
+			<LinearLayout
+				android:id="@+id/layoutTekiseiTableHS"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="2dp"
+					android:layout_marginRight="1dp"
+					android:layout_marginTop="2dp"
+					android:background="#333333"
+					android:text="@string/top_hs"
+					android:textColor="#00FF00" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layoutTekiseiTableGaitou"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="2dp"
+					android:layout_marginTop="2dp"
+					android:background="#333333"
+					android:text="@string/top_gaitou"
+					android:textColor="#00FFFF" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layoutTekiseiTableTyousei"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="2.5"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="2dp"
+					android:layout_marginLeft="1dp"
+					android:layout_marginTop="2dp"
+					android:background="#333333"
+					android:text="@string/top_tyousei"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:id="@+id/layoutTekiseiTableButtons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" >
+
+		<Button
+			android:id="@+id/buttonRunTekiseiTable"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:minHeight="40dip"
+			android:text="@string/button_run" />
+
+		<Button
+			android:id="@+id/buttonClearTekiseiTable"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.5"
+			android:minHeight="40dip"
+			android:text="@string/button_clear" />
+	</LinearLayout>
+
+</RelativeLayout>

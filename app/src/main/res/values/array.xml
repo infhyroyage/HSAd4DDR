@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="entries_paseli">
+		<item>PASELI使用</item>
+		<item>PASELI未使用</item>
+	</string-array>
+	<string-array name="entryvalues_paseli">
+		<item>1</item>
+		<item>0</item>
+	</string-array>
+	<string-array name="entries_explanation">
+		<item>説明文表示</item>
+		<item>説明文非表示</item>
+	</string-array>
+	<string-array name="entryvalues_explanation">
+		<item>1</item>
+		<item>0</item>
+	</string-array>
+	
+</resources>

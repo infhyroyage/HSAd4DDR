@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HS4D2R</string>
+    <string name="button_run">実行</string>
+    <string name="button_clear">クリア</string>
+    <string name="button_abc_sort">頭文字のアルファベット順でソート</string>
+    <string name="button_setBPM_sort">現在セットしている実質BPMでソート</string>
+    <string name="button_change">変更</string>
+    <string name="common_explanation1">まず設定画面でセットし、現在のBPM設定値を変更して下さい。</string>
+    <string name="tekisei_explanation">実行ボタンをタップすると、該当BPM帯でのBPMの譜面における最も見切りやすくなるHigh Speedデータを表示し、クリアボタンをタップするとそのデータを消去します。</string>
+    <string name="threshold_explanation">実行ボタンをタップすると、ノーツが見切る事が可能なBPMの限界値を上げるための練習用の曲データを表示し、クリアボタンをタップするとそのデータを消去します。</string>
+    <string name="common_explanation2">なお、設定画面に遷移すると以前の調整表と閾値表のデータが消えるので、再度実行ボタンをタップし作り直して下さい。</string>
+    <string name="setBPM_explanation1">まず閾値表で使う実質BPMを変更したい曲を、その曲の頭文字のアルファベット順か現在セットしている実質BPMでソートして下さい。</string>
+    <string name="setBPM_explanation2">その後、実質BPMを変更したい曲の隣にあるボタンをタップして変更して下さい。</string>
+    <string name="setBPM_explanation3">実質BPMを変更した後は以前の閾値表のデータが消えるので、再度実行ボタンをタップし作り直して下さい。</string>
+    <string name="setBPM_explanation4">なお、実質BPMが変更できる曲は速度変化のある曲(ソフラン)限定です。</string>
+    <string name="top_hs">High Speed</string>
+    <string name="top_gaitou">該当BPM帯</string>
+    <string name="top_tyousei">調整後BPM帯</string>
+    <string name="top_kyokumei">曲名</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="calcuating_tekiseiBPM">High Speedと調整前後のBPMのデータを計算中…</string>
+    <string name="searching_DDRSongData">データベースから該当曲を探索中…</string>
+    <string name="searching_and_creating">データベースから探索＆レイアウトを生成中…</string>
+    <string name="creating_layout">レイアウトを生成中…</string>
+    <string name="restoring_layout">レイアウトを復元中…</string>
+    <string name="menu_settings">ユーザー設定値変更</string>
+    <string name="menu_setBPM">実質BPM変更(ソフラン限定)</string>
+    <string name="menu_version">開発情報</string>
+    <string name="title_output_error">出力エラー</string>
+    <string name="title_tekiseiValue_error">BPM適正値入力エラー</string>
+    <string name="title_tekiseiRange_error">BPM適正範囲入力エラー</string>
+    <string name="title_showRange_error">表示対象BPM範囲入力エラー</string>
+    <string name="title_numberFormat_error">数値フォーマットエラー</string>
+    <string name="message_output_error">自己最高BPM適正値があまりにも小さいので、結果が1つも出力できませんでした。\nPASELI使用条件をもう1度確かめるか、自己最高BPM適正値をもっと大きくして下さい。</string>
+    <string name="message_tekiseiValue_error">不正なBPM適正値を入力しています。\n設定のBPM適正値をもう1度確かめて下さい。</string>
+    <string name="message_tekiseiRange_error">不正なBPM適正範囲を入力しています。\n設定のBPM適正値とBPM補正値をもう1度確かめて下さい。</string>
+    <string name="message_showRange_error">不正な表示対象BPM範囲を入力しています。\n設定の表示対象BPM範囲の値をもう1度確かめて下さい。</string>
+    <string name="message_tekiseiNumberFormat_error">数値以外の設定値が入力されています。\n設定のBPM適正値と表示対象BPM範囲の値をもう1度確かめて下さい。</string>
+    <string name="message_thresholdBPMNumberFormat_error">数値以外の設定値が入力されています。\n設定のBPM適正値とBPM補正値をもう1度確かめて下さい。</string>
+
+</resources>

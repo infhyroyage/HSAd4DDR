@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<PreferenceCategory
+		android:key="basic_preference"
+		android:title="基本設定" >
+		<EditTextPreference
+			android:defaultValue="400.0"
+			android:inputType="numberDecimal"
+			android:key="bpm_tekisei"
+			android:summary="目視で矢印のスピードに追いつける調整後BPMの最大値"
+			android:title="BPM適正値" />
+
+		<ListPreference
+			android:defaultValue="0"
+			android:entries="@array/entries_paseli"
+			android:entryValues="@array/entryvalues_paseli"
+			android:key="is_paseli"
+			android:summary="PASELIを使用時の設定にするかどうかの選択"
+			android:title="PASELI使用設定" />
+		<ListPreference
+			android:defaultValue="1"
+			android:entries="@array/entries_explanation"
+			android:entryValues="@array/entryvalues_explanation"
+			android:key="is_explanation"
+			android:summary="調整表と閾値表の説明文を表示するかどうかの選択"
+			android:title="説明文表示設定" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="bpm_range_preference"
+		android:title="調整表の表示対象BPM範囲設定" >
+		<EditTextPreference
+			android:defaultValue="65"
+			android:inputType="number"
+			android:key="bpm_min"
+			android:summary="表示対象BPMの最小値"
+			android:title="最小値" />
+		<EditTextPreference
+			android:defaultValue="600"
+			android:inputType="number"
+			android:key="bpm_max"
+			android:summary="表示対象BPMの最大値"
+			android:title="最大値" />
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:key="bpm_correction_preference"
+		android:title="閾値表のBPM適正範囲設定" >
+		<EditTextPreference
+			android:defaultValue="5.0"
+			android:inputType="numberDecimal"
+			android:key="correction_below_value"
+			android:summary="BPM適正値の下補正値"
+			android:title="下補正値" />
+		<EditTextPreference
+			android:defaultValue="5.0"
+			android:inputType="numberDecimal"
+			android:key="correction_upper_value"
+			android:summary="BPM適正値の上補正値"
+			android:title="上補正値" />
+	</PreferenceCategory>
+	
+</PreferenceScreen>

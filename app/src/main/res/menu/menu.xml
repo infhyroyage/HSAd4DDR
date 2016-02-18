@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools" >
+
+	<item
+		android:id="@+id/menu_settings"
+		android:orderInCategory="1"
+		android:title="@string/menu_settings"
+		app:showAsAction="never"/>
+	<item
+		android:id="@+id/menu_setBPM"
+		android:orderInCategory="2"
+		android:title="@string/menu_setBPM"
+		app:showAsAction="never"/>
+	<item
+		android:id="@+id/menu_version"
+		android:orderInCategory="3"
+		android:title="@string/menu_version"
+		app:showAsAction="never"/>
+
+</menu>
