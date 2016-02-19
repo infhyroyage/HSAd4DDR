@@ -1,20 +1,20 @@
 package com.hsadjustment.ddr;
 
-import java.util.ArrayList;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends ActionBarActivity implements ActionBar.TabListener {
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity implements ActionBar.TabListener {
 	// デバッグ用のタグ
 	private static final String TAG = "MainActivity";
 	// 3つのフラグメントを格納するリスト
